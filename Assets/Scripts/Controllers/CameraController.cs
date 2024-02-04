@@ -1,4 +1,3 @@
-using Photon.Pun;
 using UnityEngine;
 
 namespace Controllers
@@ -12,7 +11,6 @@ namespace Controllers
     
         [Range(1.0f, 100.0f)] public float _sensitivity = 10.0f;
 
-        private PhotonView _photonView;
         private Vector3 _offset;
         private float _xRot, _yRot;
 
@@ -21,13 +19,10 @@ namespace Controllers
         private void StartCalibration()
         {
             _offset = transform.position - _wildBall.position;
-            //_photonView.GetComponent<PhotonView>();
         }
 
         public void CameraControl(float mouse_X, float mouse_Y)
         {
-            //if (!_photonView.IsMine) return; ////////
-        
             SetRotation(mouse_X, mouse_Y);
             GetScaleDistance();
             SetDistance(transform.localRotation * _offset * GetScaleDistance() + _wildBall.position);

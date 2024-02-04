@@ -44,6 +44,18 @@ PrefabInstance:
       propertyPath: sceneViewId
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6069813515236528336, guid: 6f9666195cf5b10479a84bfa40478419, type: 3}
+      propertyPath: maxSpeed
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 6069813515236528336, guid: 6f9666195cf5b10479a84bfa40478419, type: 3}
+      propertyPath: boostDelay
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6069813515236528336, guid: 6f9666195cf5b10479a84bfa40478419, type: 3}
+      propertyPath: boostForce
+      value: 4.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7713386286706545865, guid: 6f9666195cf5b10479a84bfa40478419, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -100,7 +112,12 @@ PrefabInstance:
       propertyPath: volumeTrigger
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2524321643180241714, guid: 6f9666195cf5b10479a84bfa40478419, type: 3}
+    - {fileID: 4634237132284978408, guid: 6f9666195cf5b10479a84bfa40478419, type: 3}
+    - {fileID: 5481170705855542320, guid: 6f9666195cf5b10479a84bfa40478419, type: 3}
+    - {fileID: 8690788356788504439, guid: 6f9666195cf5b10479a84bfa40478419, type: 3}
+    - {fileID: 5056976051924738584, guid: 6f9666195cf5b10479a84bfa40478419, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
